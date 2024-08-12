@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="p-6">
+  <h1 class="text-3xl font-bold mb-4">Styling in React</h1>
+  <p class="mb-4">Styling in React can be done using various methods. One popular way is to use Tailwind CSS. To get started, install Tailwind CSS:</p>
+  <div class="bg-gray-100 p-4 rounded-md mb-4">
+    <pre class="text-sm">
+      <code>
+        npm install tailwindcss
+        npx tailwindcss init
+      </code>
+    </pre>
+  </div>
+  <p class="mb-4">Configure Tailwind CSS in your project and then you can use it in your components:</p>
+  <div class="bg-gray-100 p-4 rounded-md">
+    <pre class="text-sm">
+      <code>
+        import React from 'react';
+
+        const StyledComponent = () => {
+          return (
+            &lt;div className="p-4 bg-blue-500 text-white"&gt;
+              &lt;h1 className="text-2xl"&gt;Hello, styled with Tailwind CSS!&lt;/h1&gt;
+            &lt;/div&gt;
+          );
+        };
+
+        export default StyledComponent;
+      </code>
+    </pre>
+  </div>
+</body>
+</html>

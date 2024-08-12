@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Routing</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="p-6">
+  <h1 class="text-3xl font-bold mb-4">Routing in React</h1>
+  <p class="mb-4">Routing in React can be managed using React Router. To get started, install React Router:</p>
+  <div class="bg-gray-100 p-4 rounded-md mb-4">
+    <pre class="text-sm">
+      <code>
+        npm install react-router-dom
+      </code>
+    </pre>
+  </div>
+  <p class="mb-4">Here is an example of setting up basic routing:</p>
+  <div class="bg-gray-100 p-4 rounded-md">
+    <pre class="text-sm">
+      <code>
+        import React from 'react';
+        import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+        import Home from './Home';
+        import About from './About';
+
+        const App = () => {
+          return (
+            &lt;Router&gt;
+              &lt;Switch&gt;
+                &lt;Route path="/about" component={About} /&gt;
+                &lt;Route path="/" component={Home} /&gt;
+              &lt;/Switch&gt;
+            &lt;/Router&gt;
+          );
+        };
+
+        export default App;
+      </code>
+    </pre>
+  </div>
+</body>
+</html>

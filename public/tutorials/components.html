@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Components</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="p-6">
+  <h1 class="text-3xl font-bold mb-4">Understanding Components in React</h1>
+  <p class="mb-4">Components are the building blocks of a React application. A component can be a function or a class. Here is an example of a functional component:</p>
+  <div class="bg-gray-100 p-4 rounded-md mb-4">
+    <pre class="text-sm">
+      <code>
+        import React from 'react';
+
+        const MyComponent = () => {
+          return (
+            &lt;div&gt;
+              &lt;h1&gt;Hello, World!&lt;/h1&gt;
+            &lt;/div&gt;
+          );
+        };
+
+        export default MyComponent;
+      </code>
+    </pre>
+  </div>
+  <p class="mb-4">Components can also accept props, which are inputs to the component:</p>
+  <div class="bg-gray-100 p-4 rounded-md">
+    <pre class="text-sm">
+      <code>
+        import React from 'react';
+
+        const Greeting = ({ name }) => {
+          return &lt;h1&gt;Hello, {name}!&lt;/h1&gt;;
+        };
+
+        export default Greeting;
+      </code>
+    </pre>
+  </div>
+</body>
+</html>
